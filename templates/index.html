@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spam Classifier</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <div class="container py-5">
+        <div class="row justify-content-center align-items-center">
+            <!-- GIF Section -->
+            <div class="col-md-4 text-center mb-4 mb-md-0">
+                <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZXJ2YjY1ajZkZXp4dTlxODVuaGJvam9pZHYzb3hrZDVlenZ5cml0cSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/9l8MXyxSEC3O8/giphy.gif"
+                     alt="Spam GIF" class="img-fluid rounded shadow">
+            </div>
+
+            <!-- Form Section -->
+            <div class="col-md-6">
+                <div class="card shadow p-4">
+                    <h2 class="mb-4 text-center text-primary">Spam Email Classifier</h2>
+                    <form method="POST" action="/predict">
+                        <div class="mb-3">
+                            <label for="email" class="form-label"><strong>Enter Email Text</strong></label>
+                            <textarea name="email" id="email" rows="6" class="form-control" placeholder="Paste email content here..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Predict</button>
+                    </form>
+
+                    {% if prediction %}
+                        <div class="alert mt-4 {{ 'alert-danger' if prediction == 'Spam' else 'alert-success' }}" role="alert">
+                            <strong>Prediction:</strong> {{ prediction }}
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
