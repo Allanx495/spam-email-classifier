@@ -1,4 +1,4 @@
-# <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMG5heWI1MG5zdTY5dng3bGNpdHVldW96dDMwNjNlZjhpMG1oZHppdyZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/9l8MXyxSEC3O8/200.webp" width="40"/> Spam Email Classifier
+# <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMG5heWI1MG5zdTY5dng3bGNpdHVldW96dDMwNjNlZjhpMG1oZHppdyZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/9l8MXyxSEC3O8/200.webp" width="200"/> Spam Email Classifier
 
 
 ### Objective: Help users quickly detect if an email is spam or not using a neural network model and a clean, intuitive web interface.
