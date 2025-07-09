@@ -28,7 +28,7 @@ This is a Flask-based machine learning web app that allows users to input the co
 ---
 
 ## 🧪 Demo
-![Spam Email Classifier Demo](Screenshot%202025-07-08%20at%206.26.09%E2%80%AFPM.png)
+![Spam Email Classifier Demo](spam_demo.png)
 
 
 ---
